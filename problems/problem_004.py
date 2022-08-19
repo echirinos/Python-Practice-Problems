@@ -13,4 +13,18 @@
 # problem to get a good feel for how to solve it.
 
 def max_of_three(value1, value2, value3):
-    pass
+    # returns if they are all the same
+    if value1 == value2 and value2 == 3 and value1 == value3:
+        return value1
+    elif value1 >= value2:
+        return value1
+    elif value2 >= value3:
+        return value2
+    elif value3 >= value1:
+        return value3
+    elif value1 >= value3:
+        return value1
+
+
+print(max_of_three(3, 3, 3))
+print(max_of_three(3, 3, 1))

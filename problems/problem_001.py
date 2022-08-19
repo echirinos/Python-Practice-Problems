@@ -9,4 +9,15 @@
 # problem to get a good feel for how to solve it.
 
 def minimum_value(value1, value2):
-    pass
+    if value1 < value2:
+        return value1
+    elif value2 < value1:
+        return value2
+    elif value1 == value2:
+        return value2
+
+
+# tests
+
+print(minimum_value(4, 5))
+print(minimum_value(5, 5))

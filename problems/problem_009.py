@@ -13,4 +13,14 @@
 # problem to get a good feel for how to solve it.
 
 def is_palindrome(word):
-    pass
+    if word == word[::-1]:
+        return True
+    else:
+        return False
+
+
+test = "racecar"
+print(is_palindrome(test))
+
+test1 = "paint"
+print(is_palindrome(test1))
